@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import loginIMG from '../../../../assets/login-img.svg'
 import Button from '../../../../components/Button';
+import CreateAcount from '../CreateAcount';
 
 function LoginForm() {
 
@@ -45,11 +46,7 @@ function LoginForm() {
               <Button onClick={executeLogin}>Login</Button>
             </div>
 
-            <div className="create-acount">
-              <span className="txt1">Não possui conta?</span>
-
-              <a href="#" className="txt2">Criar Conta.</a>
-            </div>
+            <CreateAcount />
 
           </form>
       </>
